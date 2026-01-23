@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>Week 3 You Do Questions</title>
+</head>
+<body>
+    <main>
+        <h1>Week 3 You Dos</h1>
+        
+        <h2>Lecture 1: Functions, Data Structures</h2>
+        <!-- I realized I should probably be using sections for each slide, then paragraphs for paragraphs from slides. Sections should have headings, so I'm using the heading from the relevant slide. -->
+        <section>
+            <!--The heading is h3 since we already have h1 and h2!-->
+            <h3>Entry Level: Creating Functions</h3>
+            <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229984/View">
+                <p>"In past programming courses, how have you decided when to create a function? Think of an example of a function you've created. What did it do? What inputs did it need (if any)? What outputs did it give (if any)?</p>
+                <p>Additionally, find a built-in function in the PHP docs that you think you can explain and explain what it does in your own words"</p>
+                (slide 10)
+            </blockquote>
+        </section>
+
+        <section>
+            <h3>Function Terminology</h3>
+            <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229984/View"><p>"Summarize the different parts of a function that we just went over in your own words. If you'd like, you can create a simple function as an example and reference the different parts of that example function (Like what I did here!)"</p> 
+                (slide 22)
+            </blockquote>
+        </section>
+
+        <section>
+            <h3>Example: Weird Addition</h3>
+            <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229984/View"><p>"What does this function do? Test this function to determine what happens if you use two different types (a number and a string or a string and a number)."</p>
+                (slide 25)
+            </blockquote>
+        </section>
+
+        <section>
+            <h3>Testing Scope</h3>
+            <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229984/View"><p>"Try
+            <ul>
+                <li>Accessing a parameter outside of a function</li>
+                <li>Accessing a global variable inside of a function</li>
+                <li>Accessing a global variable inside a function where there is already a variable of the same name</li>
+            </ul></p>
+            <p>What happens for each? What do you need to do to have the best chance of making each thing work?</p>
+            <p>Hint: You may want to echo or var_dump your variables to make sure it contains the right value!"</p>
+            (slide 32)
+            </blockquote>
+        </section>
+
+        <section>
+            <h3>What's the Scope?</h3>
+            <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229984/View">
+            <p>"Define the scope (local or global) of all variables in the following code:</p>
+            <!-- I wasn't sure how to represent a block of code, so I went to the docs for the Inline Code element - Under Notes it says to wrap with <pre> for multiple lines - likely because pre keeps whitespace intact-->
+            <pre><code>
+
+            function favorite_number($n){
+            
+                if(is_string($n) && is_numeric((int)$n)){
+            
+                    $trickery = $n + 1;
+            
+                    echo "my favorite number is " . $trickery;
+                }
+            }
+            
+            $class_num = 215;
+            
+            favorite_number($class_num);</code></pre>" 
+            (slide 34)
+            </blockquote>
+        </section>
+
+            <section>
+                <h3>You Do: Practice Documentation</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229984/View">
+                <p>"For the function you described earlier, what would you write for the comment above the function?</p>
+                <p>What would you name the function so it would make sense?</p>
+                <p>If it has parameters, are those named appropriately? If not, what would better names be for those parameters?"</p> 
+                (slide 45)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Example: Associative Arrays</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229984/View">
+                    "<pre>
+                        <code>
+                            $mynamearray = array("Kiera" => "Gross", "Rasmus => "Lerdorf", "James" => "Bucki");
+                        </code>
+                    </pre>
+                    <p>Do you foresee any issues with this array if it contained, for example, all faculty at GCC?</p>
+                    <p>What would you do instead if you needed an array to store all faculty names at GCC?"</p>
+                    (slide 52)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Efficiency: Think About It</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229984/View">
+                    <p>"Try to think of an example of data that would likely be stored in an array. Would it be an indexed or associative array?"</p>
+                    (slide 56)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Practice: Array Functions</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229984/View">
+                    <p>"Using any array you'd like, practice with at least 2 of the array functions mentioned on the previous slide.</p>
+                    <p>Additionally, write a function that removes a given item from an array. Instead of erroring, it should just return the unchanged array if it is unable to remove the item from the array given."</p>
+                    (slide 63)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Practice: String Functions</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229984/View">
+                    <p>"Find implode and explode among the string functions. What do they do? Give an example for both functions on how they work.</p>
+                    <p>Do any other string functions catch your eye?"</p>
+                    (slide 65)
+                </blockquote>
+            </section>
+
+            <h2>Lecture 2: Loops, Recursion</h2>
+
+            <section>
+                <h3>While Loop Practice</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229987/View">
+                    <p>"Create a while loop that makes an array containing the numbers 1-20</p>
+                    <!--I'm emphasizing that this is a challenge (and not expected), so I used the emphasis element!-->
+                    <p><em>Challenge</em>: Try making an array with only the even numbers from 1 to 20</p>
+                    <p>See if you can turn your loop into a do while loop that has the same output.</p>
+                    <p>Which was easier in your opinion?"</p>
+                    (slide 10)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>For Loop Practice</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229987/View">
+                    <p>"Create a for loop that makes an array containing the numbers 1-20</p>
+                    <p><em>Challenge</em>: Try making an array with only the even numbers in 1-20</p>
+                    <p>See if you can turn your for loop into a foreach loop that has the same output.</p>
+                    <p>Which was easier in your opinion? How do they compare to while loops?"</p>
+                    (slide 18)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>For Loops Vs While Loops</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229987/View">
+                    <p>"What are some indicators that you should use a specific type of loop?"</p>
+                    (slide 26)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Practice: For Loops Vs While Loops</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229987/View">
+                    <p>"Consider each of these tasks:
+                        <ul>
+                            <li>Counting down from 10 to 1</li>
+                            <li>Creating an array of square numbers from 1 to 100</li>
+                            <li>Counting the number of items in an array (without using an array function!)</li>
+                            <li>Printing the faculty names from that array we made ($mynamearray)</li>
+                        </ul>
+                    </p>
+                    <p>Which type of loop would you pick for each of these tasks? Complete one of them with your chosen loop."</p>
+                    (slide 27)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>You Do: Changing Loops</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229987/View">
+                    <p>"Can you change the code we did for the Sieve of Eratosthenes to use a different set of loops?</p>
+                    <p>Try doing it and see if you get the same output!"</p>
+                    (slide 29)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Example: Recursive Function</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229987/View">
+                    "<pre>
+                        <code>
+                            function recursive_example($n){
+                                if ($n &lt;= 0){     # this is the base case
+                                    return;}
+                            else {          # this is the recursive case
+                                echo $n;
+                                return recursive_example($n-1); } }
+                        </code>
+                    </pre>
+                    <p>What does this function do?"</p>
+                    (slide 34)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Recursion Practice</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229987/View">
+                    <p>"Create a recursive function that adds the numbers from 1 to n.</p>
+                    <p>Can you do the same thing with a loop?"</p>
+                    (slide 36)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Stack Trace Practice</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229987/View">
+                    <p>"Either do the stack trace for the digits recursive function that was done as an example earlier or your recursive function that you made for summing 1 to n. Pick a value that will only take a few recursive calls (something like a 3 or 4 digit number, or n=3 / n=4).</p>
+                    <p>Did you get the value that your code gets?</p>
+                    <p>How could you adapt this process to use it for loops?"</p>
+                    (slide 44)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Recursion Reflection</h3>
+                <blockquote cite="https://mylearning.suny.edu/d2l/le/content/2514882/viewContent/54229987/View">
+                    <p>"Which of the loop examples could you turn into a recursive function? Try transforming one of them.</p>
+                    <p>In your own words, when do you think a recursive problem can be solved with a loop? What about a loop problem being solved with recursion?"</p>
+                    (slide 46)
+                </blockquote>
+            </section>
+
+    </main>
+</body>
+</html>
