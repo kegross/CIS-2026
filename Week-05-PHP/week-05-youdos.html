@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>Week 5 You Do Questions</title>
+</head>
+<body>
+    <main>
+        <h1>Week 5 You Dos</h1>
+
+            <h2>Lecture 1</h2>
+
+            <section>
+                <h3>Reflection: Errors</h3>
+                <blockquote>
+                    <p>"Do you have a silly error story? Something where the error itself was not very hard, but finding it was surprisingly difficult."</p>
+                    (slide 7)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Identifying Error Types</h3>
+                <blockquote>
+                    <p>"What type of error was the error you mentioned earlier?"</p>
+                    (slide 15)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Error or Warning</h3>
+                <blockquote>
+                    <p>"Produce the issue or check the docs to determine if each of the following is a warning or an error in <abbr title="PHP: Hypertext Preprocessor">PHP</abbr></p>
+                    <p>
+                        <ul>
+                            <li>Trying to access a variable that does not exist</li>
+                            <li>Calling a function without enough arguments</li>
+                            <li>Using a string function on something that is not a string</li>
+                            <li>Trying to access a variable that is out of scope</li>
+                        </ul>
+                    "</p>
+                    (slide 22)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Practice: Conditionals</h3>
+                <blockquote>
+                    <p>"What are some other things that you might want to check before dividing two variables? Rewrite this code to check for all of the potential errors/warnings you come up with.</p>
+                    <p><pre><code>
+                        if($b != 0){
+                            $n = $a/$b;
+                        }
+                        else {
+                            // Something's gone wrong!
+                        }</code></pre>"</p>
+                        (slide 28)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Activity: Catching Errors</h3>
+                <blockquote>
+                    <p>"These are potential errors/exceptions you could see in PHP. Which do you think are most appropriately handled by a conditional? Which should be handled by a try/catch? Which could just be the result of a programming mistake?</p>
+                    <p>
+                        <ul>
+                            <li><a href="https://www.php.net/manual/en/class.argumentcounterror.php">ArgumentCountError</a></li>
+                            <li><a href="https://www.php.net/manual/en/class.divisionbyzeroerror.php">DivisionByZeroError</a></li>
+                            <li><a href="https://www.php.net/manual/en/class.pdoexception.php">PDOException</a> (PDO is a library - we'll use it for SQL)</li>
+                            <li><a href="https://www.php.net/manual/en/class.typeerror.php">TypeError</a></li>
+                        </ul>
+                    </p>
+                    <p>Give your reasoning for each decision."</p>
+                    (slide 31)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Activity: Think Like a User</h3>
+                <blockquote>
+                    <p>"Imagine a question asking:</p>
+                    <p>What is your name?</p>
+                    <p>Followed by a textbox. The code on the backend splits this into a first and last name, and then stores it in a database.</p>
+                    <p>What are different inputs that a user may innocently submit that could cause errors?"</p>
+                    (slide 37)
+                </blockquote>
+            </section>
+
+            <h2>Lecture 2</h2>
+
+            <section>
+                <h3>Stylish Pseudocode</h3>
+                <blockquote>
+                    <p>"There are a few changes here, can you spot them?</p>
+                    <p><pre>
+                        <code>
+                            FUNCTION: fizzbuzz(n)
+                            FOR numbers from 1 to n:
+                                IF the number is divisible by 3
+                                    Output fizz
+                                IF the number is divisible by 5
+                                    Output buzz
+                                IF number is not divisible by 3 nor 5
+                                    Output number
+                    </code></pre></p>
+                    (slide 9)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Common Mistakes</h3>
+                <blockquote>
+                    <p>"Try creating the following errors:</p>
+                    <p>
+                        <ul>
+                            <li>Unending loop</li>
+                            <li>Recursive function with no base case</li>
+                            <li>Forgetting a semicolon/curly bracket</li>
+                            <li>Accessing an index in an array (but the index doesn't exist!)</li>
+                        </ul>
+                    </p>
+                    <p>Copy the error/warning message and identify which parts help you identify the error from the list above. I promise, they're there to help!</p>
+                    <p>Also try recreating other errors that are common for you and do the same."</p>
+                    (slide 18)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Personal Steps</h3>
+                <blockquote>
+                    <p>"What are some common errors that you make? How could you make sure you catch them quickly when they happen?</p>
+                    <p>What do you do when preparing to start an assignment?"</p>
+                    (slide 19)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Activity: Writing Unit Tests</h3>
+                <blockquote>
+                    <p>"Consider a validation function for a person's name.</p>
+                    <p>For this function, what should you test?"</p>
+                    (slide 24)
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Activity: Readability, Features</h3>
+                <blockquote>
+                    <p>"What's something you've seen in code that makes it less readable? What should be done instead?</p>
+                    <p>Additionally, can you think of a feature that you implemented in one of your homework assignments? How would you describe the feature and what it does?"</p>
+                    (slide 33)
+                </blockquote>
+            </section>
+            
+    </main>
+</body>
+</html>
