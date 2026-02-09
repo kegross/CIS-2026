@@ -6,15 +6,16 @@
 </head>
 <body>
     <main>
-        <form action="" method="POST">
+        <form action="confirmation.php" method="POST">
             <div>
                 <label for="email-id">Enter your email:</label>
                 <input type="email" name="email-input" id="email-id" />
             </div>
 
-            <div>
+            <fieldset>
+            <legend>
             What colors do you like?
-            </div>
+            </legend>
             <div>
                 <input type="checkbox" name="color-choice" id="color-red" value="red"/> 
                 <label for="color-red">Red</label>
@@ -27,10 +28,12 @@
                 <input type="checkbox" name="color-choice" id="color-blue" value="blue"/> 
                 <label for="color-blue">Blue</label>
             </div>
+            </fieldset>
 
-            <div>
+            <fieldset>
+            <legend>
             What is your favorite color?
-            </div>
+            </legend>
             <div>
                 <input type="radio" name="color-favorite" id="color-fav-red" value="red"/> 
                 <label for="color-fav-red">Red</label>
@@ -43,14 +46,27 @@
                 <input type="radio" name="color-favorite" id="color-fav-blue" value="blue"/> 
                 <label for="color-fav-blue">Blue</label>
             </div>
+            </fieldset>
 
             <div>
                 <label for="mixed-color-id">Select your favorite color mix:</label>
                 <select name="mixed-color-favorite" id="mixed-color-id">
+                    <optgroup label="Normal Answers">
                     <option value="orange"> Orange </option>
                     <option value="green"> Green </option>
                     <option value="purple"> Purple </option>
+                    </optgroup>
+                    <optgroup label="Weird Answers">
+                    <option value="buff"> Buff </option>
+                    <option value="chartreuse"> Chartreuse </option>
+                    <option value="periwinkle"> Periwinkle </option>
+                    </optgroup>
                 </select>
+            </div>
+
+            <div>
+                <label for="long-text">Write a limerick on your favorite color</label>
+                <textarea id="long-text" name="long-text-answer" rows="5" cols="35">There once was a man from Nantucket...</textarea>
             </div>
 
 
