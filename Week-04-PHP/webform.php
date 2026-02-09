@@ -13,6 +13,18 @@
             </div>
 
             <fieldset>
+                <legend>What is your age?</legend>
+                <?php
+                    for($i=10;$i<=60;$i = $i + 10){
+                        $end = $i;
+                        $start = $end - 9;
+                        print("<div><input type='radio' name='age-radio-simple-loop' id='age-$i' value='$i'><label for='age-$i'>$start-$end</label></div>");
+                    }
+                ?>
+                <div><input type='radio' name='age-radio-simple-loop' id='age-7' value='7'><label for='age-7'>61+</label></div>
+            </fieldset>
+
+            <fieldset>
             <legend>
             What colors do you like?
             </legend>
