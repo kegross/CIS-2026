@@ -12,6 +12,11 @@
                 <input type="email" name="email-input" id="email-id" />
             </div>
 
+            <div>
+                <label for="password-id">Enter your password:</label>
+                <input type="password" name="password-input" id="password-id" />
+            </div>
+
             <fieldset>
                 <legend>What is your age?</legend>
                 <?php
@@ -29,15 +34,15 @@
             What colors do you like?
             </legend>
             <div>
-                <input type="checkbox" name="color-choice" id="color-red" value="red"/> 
+                <input type="checkbox" name="color-choice[]" id="color-red" value="red"/> 
                 <label for="color-red">Red</label>
             </div>
             <div>
-                <input type="checkbox" name="color-choice" id="color-yellow" value="yellow"/> 
+                <input type="checkbox" name="color-choice[]" id="color-yellow" value="yellow"/> 
                 <label for="color-yellow">Yellow</label>
             </div>
             <div>
-                <input type="checkbox" name="color-choice" id="color-blue" value="blue"/> 
+                <input type="checkbox" name="color-choice[]" id="color-blue" value="blue"/> 
                 <label for="color-blue">Blue</label>
             </div>
             </fieldset>
@@ -63,6 +68,7 @@
             <div>
                 <label for="mixed-color-id">Select your favorite color mix:</label>
                 <select name="mixed-color-favorite" id="mixed-color-id">
+                    <option value="default"> -- Select a color -- </option>
                     <optgroup label="Normal Answers">
                     <option value="orange"> Orange </option>
                     <option value="green"> Green </option>
