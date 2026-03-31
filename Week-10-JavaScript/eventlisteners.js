@@ -7,19 +7,17 @@ firstButton.addEventListener("click", () => {
 
 const radioList = document.querySelectorAll("[type=radio]");
 
-console.log(radioList);
+// const body = document.querySelector("body");
 
-const body = document.querySelector("body");
-
-for(const radioButton of radioList){
-    radioButton.addEventListener("focus", () => {
-        const color = radioButton.value;
-        body.style.setProperty("background-color", color);
-    });
-    radioButton.addEventListener("blur", () => {
-        body.style.setProperty("background-color", "white");
-    });
-}
+// for(const radioButton of radioList){
+//     radioButton.addEventListener("focus", () => {
+//         const color = radioButton.value;
+//         body.style.setProperty("background-color", color);
+//     });
+//     radioButton.addEventListener("blur", () => {
+//         body.style.setProperty("background-color", "white");
+//     });
+// }
 
 // const checkbox = document.querySelector("[type=checkbox]");
 
