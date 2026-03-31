@@ -26,4 +26,4 @@ const secondPar = allParagraphs[1];
 
 secondPar.classList.add("exampleclass");
 
-secondPar.style.setProperty("")
+// secondPar.style.setProperty("")
