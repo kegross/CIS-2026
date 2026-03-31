@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <title>My Example Page</title>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="elements.js" defer></script>
+        <script src="eventlisteners.js" defer></script>
     </head>
     <body>
         <main>
@@ -21,6 +23,49 @@
             </ul>
 
             <a href="genesee.edu">Here is a link to the main <abbr title="Genesee Community College">GCC</abbr> webpage</a>.
+
+            <form action="" method="POST">
+                <fieldset>
+                    <legend>
+                    What colors do you like?
+                    </legend>
+                    <div>
+                        <input type="checkbox" name="color-choice[]" id="color-red" value="red"/> 
+                        <label for="color-red">Red</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="color-choice[]" id="color-yellow" value="yellow"/> 
+                        <label for="color-yellow">Yellow</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="color-choice[]" id="color-blue" value="blue"/> 
+                        <label for="color-blue">Blue</label>
+                    </div>
+                    </fieldset>
+        
+                    <fieldset>
+                    <legend>
+                    What is your favorite color?
+                    </legend>
+                    <div>
+                        <input type="radio" name="color-favorite" id="color-fav-red" value="red"/> 
+                        <label for="color-fav-red">Red</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color-favorite" id="color-fav-yellow" value="yellow"/> 
+                        <label for="color-fav-yellow">Yellow</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color-favorite" id="color-fav-blue" value="blue"/> 
+                        <label for="color-fav-blue">Blue</label>
+                    </div>
+                    </fieldset>
+                
+                <button type="button" name="button-example" id="button-id">Click Here!</button>
+                
+                <button type="submit" name="submit-button" id="submit-id">Submit</button>
+
+            </form>
         </main>
     </body>
 </html>
