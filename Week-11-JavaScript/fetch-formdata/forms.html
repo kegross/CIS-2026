@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>fetch examples</title>
+		<script src="forms.js" defer></script>
+		<link rel="stylesheet" href="examples.css">
+	</head>
+	<body>
+		<div class="container">
+			<form action="form/formSubmit.php" method="post" id="form">
+				<div id="radio-div">
+					<fieldset>
+						<legend>
+							What is your favorite topic from JS?
+						</legend>
+						<div id="selected-msg-container">
+							<small id="selected-msg">selected</small>
+						</div>
+						<div>
+							<label>
+								<input type="radio" class="js-topic" value="eventsJS" name="js-topic" id="js-topic-eventlisteners"> Events (Native JS)
+							</label>
+						</div>
+						<div>
+							<label>
+								<input type="radio" class="js-topic" value="eventsJQ" name="js-topic" id="js-topic-jquery"> Events (jQuery)
+							</label>
+						</div>
+						<div>
+							<label>
+								<input type="radio" class="js-topic" value="ajax" name="js-topic" id="js-topic-fetch"> AJAX fetch
+							</label>
+						</div>
+						<div>
+							<label>
+								<input type="radio" class="js-topic" value="other" name="js-topic" id="js-topic-other"> Other
+							</label>
+						</div>
+					</fieldset>
+				</div>
+		
+				<div>
+					<label for="example-email">email:</label>
+					<input type="email" id="example-email">
+					<span>
+						<small>
+							<span class="email-msg"></span>
+						</small>
+					</span>
+				</div>
+			
+				<div>
+					<textarea name="example-text" id="example-text"></textarea>
+					<span>
+						<small>
+							count of characters: <span class="text-counter">0</span>
+						</small>
+					</span>
+				</div>
+
+				<div>
+			
+				</div>
+			
+				<div>
+					<textarea name="second-example-text" id="second-example-text"></textarea>
+				</div>
+
+				<div class="headspace">
+					<button id="form-submit" type="submit">
+						submit
+					</button>
+				</div>
+				<p id="load-content-here"></p>
+			</form>
+		</div>
+	</body>
+</html>
